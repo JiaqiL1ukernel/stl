@@ -1,0 +1,4 @@
+/home/book/下载/clion-2023.1.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/book/下载/clion-2023.1.2/bin/ninja/linux/x64/ninja -G Ninja -S /home/book/CLionProjects/stl -B /home/book/CLionProjects/stl/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/book/CLionProjects/stl/cmake-build-debug
