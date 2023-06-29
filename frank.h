@@ -12,4 +12,5 @@
 #include "frank_iterators.h"
 #include "frank_type_traits.h"
 #include "frank_function.h"
+#include "frank_numeric.h"
 #endif //STL_FRANK_H
