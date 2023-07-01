@@ -87,19 +87,27 @@ void show_deque(const deque<T,Alloc,BufSiz>& x){
 #include "frank_queue.h"
 #include "frank_heap.h"
 #include <vector>
+#include "frank_algo.h"
+struct binary_op
+{
+    bool operator()(int x,int y){return x == y;}
+};
+
+struct pred
+{
+    bool operator()(int x){return x>3;}
+};
 int main() {
     using namespace frank;
 
-    prioroty_queue<int> q;
-    q.push(2);
-    q.push(3);
-    q.push(4);
-    q.push(12);
-    q.push(89);
-    q.push(23);
-    q.push(24);
-    q.push(94);
-    q.pop();
-    std::cout<<q.top();
+    int a[] = {1,2,3,3,5,6,7,8};
+    int b[] = {3,4,5};
+    vector<int> arr1(&a[0],&a[8]);
+    vector<int> arr2(&b[0],&b[3]);
+    vector<int>::iterator new_end,i;
+    new_end = partition(arr1.begin(),arr1.end(),pred());
+    for(i = arr1.begin();i != arr1.end();++i){
+        std::cout<<*i<<" ";
+    }
 
 }
